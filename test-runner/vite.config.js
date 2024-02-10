@@ -7,10 +7,6 @@ export default defineConfig({
   // relative path, which is necessary if your app is deployed
   // to a subdirectory (e.g. https://benchristel.github.io/my-app/)
   base: "",
-  esbuild: {
-    jsxFactory: "h",
-    jsxFragment: "Fragment",
-  },
   plugins: [
     inject({
       include: "src/**/*.{ts,tsx,js,jsx}",
@@ -23,12 +19,4 @@ export default defineConfig({
       debug: ["@benchristel/taste", "debug"],
     }),
   ],
-  resolve: {
-    alias: {
-      "react": "preact/compat",
-      "react-dom/test-utils": "preact/test-utils",
-      "react-dom": "preact/compat", // Must be below test-utils
-      "react/jsx-runtime": "preact/jsx-runtime",
-    },
-  },
 })
