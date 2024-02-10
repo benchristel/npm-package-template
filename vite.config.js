@@ -1,5 +1,6 @@
 import {defineConfig} from "vite"
 import inject from "@rollup/plugin-inject"
+import {resolve} from "node:path"
 
 export default defineConfig({
   // Base path for references to asset files in the built code.
@@ -19,4 +20,11 @@ export default defineConfig({
       debug: ["@benchristel/taste", "debug"],
     }),
   ],
+  build: {
+    lib: {
+      entry: resolve(__dirname, "./src/index.ts"),
+      name: "NPM Package Template",
+      fileName: "npm-package-template",
+    },
+  },
 })
