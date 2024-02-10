@@ -6,15 +6,13 @@
   "type": "module",
   "main": "dist/index.js",
   "devDependencies": {
+    "@benchristel/taste": "0.5.0",
     "@rollup/plugin-inject": "^4.0.4",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "rollup": "^2.0.0",
     "typescript": "^4.8.4",
     "vite": "^5.1.1"
-  },
-  "dependencies": {
-    "@benchristel/taste": "0.5.0"
   },
   "scripts": {
     "build": "rm -rf dist && yarn tsc --project tsconfig.build.json --outDir dist",
