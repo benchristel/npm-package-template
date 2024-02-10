@@ -19,7 +19,6 @@
     "dev": "yarn vite ./test-runner --config vite.config.js",
     "format": "node_modules/.bin/prettier --write .",
     "setup": "yarn install; yarn run husky install",
-    "smoke": "yarn vite preview --open",
     "ts": "yarn tsc --watch --noEmit"
   }
 }
