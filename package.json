@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "rm -rf dist && yarn tsc --project tsconfig.build.json --outDir dist",
-    "dev": "yarn vite ./dev --config vite.config.js",
+    "dev": "yarn vite ./dev",
     "format": "node_modules/.bin/prettier --write .",
     "setup": "yarn install; yarn run husky install",
     "ts": "yarn tsc --watch --noEmit"
