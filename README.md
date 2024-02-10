@@ -1,4 +1,4 @@
-# Preact, TypeScript, Vite, @benchristel/taste
+# Ben's NPM Package Template
 
 ## Setup
 
