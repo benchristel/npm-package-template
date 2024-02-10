@@ -2,8 +2,9 @@
   "name": "npm-package-template",
   "version": "1.0.0",
   "description": "Template app",
-  "main": "dist/index.js",
   "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
   "devDependencies": {
     "@rollup/plugin-inject": "^4.0.4",
     "husky": "^8.0.1",
