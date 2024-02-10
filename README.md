@@ -9,6 +9,7 @@
    ```
    yarn setup
    ```
+5. Change the package name and description in `package.json`.
 
 ## Development
 
@@ -30,7 +31,7 @@ yarn ts
 - **Tests** run in the browser. The test report appears at the top of the screen.
 - The page will refresh (re-running the tests) whenever you save a file.
 - The tests and test report are completely removed from production builds.
-- You can write tests in-source, or in files named `*.test.*`, e.g. `example.test.ts`. The test file pattern is configured in `src/test-results.ts`.
+- You can write tests in-source, or in files named `*.test.*`, e.g. `example.test.ts`. The test file pattern is configured in `dev/test-results.ts`.
 
 The test framework is `@benchristel/taste`. For more information, see [@benchristel/taste on NPM](https://www.npmjs.com/package/@benchristel/taste).
 
@@ -40,25 +41,10 @@ The test framework is `@benchristel/taste`. For more information, see [@benchris
 - To format all files, run `yarn format`.
 - The code formatter is `prettier`. See `.prettierrc` for configuration.
 
-## Building for production
+## Building for release
 
 ```
 yarn build
 ```
 
-This outputs files in the `dist` directory, which is symlinked to `docs`
-for easy deployment to GitHub Pages.
-
-To [smoketest](<https://en.wikipedia.org/wiki/Smoke_testing_(electrical)>) your production build locally before deploying it, run:
-
-```
-yarn smoke
-```
-
-This runs an HTTP server (via [`vite preview`](https://vitejs.dev/guide/cli.html#vite-preview)) and opens the built app in your browser.
-
-## Deploying
-
-To deploy your built app to GitHub Pages, go to the `Pages` tab of your repo's settings and change the directory to deploy from to `/docs`.
-
-This template repo is deployed at https://benchristel.github.io/preact-typescript-vite-taste/
+This outputs files in the `dist` directory.
